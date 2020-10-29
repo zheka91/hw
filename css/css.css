@@ -54,12 +54,10 @@ body {
 	display: block;
 	width: 25px;
 	height: 19px;
-	/*background-image: url('https://cdn.icon-icons.com/icons2/510/PNG/512/checkmark_icon-icons.com_50429.png');
-	background-size: contain;
-	background-repeat: no-repeat;*/
 	position: absolute;
-	/*top: 0px;*/
-	left: -25px;
+    top: 10px;
+    left: -25px;
+    line-height: 1;
 }
 
 .main-header-img {
@@ -291,6 +289,7 @@ body {
 .reviews-card {
 	width: 50%;
 	display: flex;
+	margin: 0 0 24px 0;
 }
 
 .reviews-card-img {
@@ -303,7 +302,7 @@ body {
 }
 
 .reviews-card-p {
-	margin: 0 0 24px 0;
+	margin: 0;
 	padding: 16px 20px;
 	box-sizing: border-box;
 	border-radius: 6px;
@@ -415,8 +414,178 @@ body {
 	font-weight: 700;
 	color: #445161;
 	cursor: pointer;
+	text-transform: uppercase;
 }
 
 .prices-card-button:hover {
 	background-color: #f5f5f5;
+}
+
+.footer {
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+	font-family: Arial;
+	background-color: #445162;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer-title {
+	margin: 0;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 31px;
+	width: 100%;
+}
+
+.footer-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 500px;
+	margin: 0;
+	margin-right: 46px;
+}
+
+.footer-inputs {
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	margin-bottom: 21px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #445162;
+	border-radius: 6px;
+	background-color: #fff;
+	outline: none;
+	text-transform: capitalize;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.footer-inputs::placeholder {
+	color: #445162;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.footer-inputs:hover,
+.footer-inputs:hover::placeholder {
+	background-color: #f5f5f5;
+	color: #000;
+}
+
+textarea.footer-inputs {
+	height: 170px;
+	resize: none;
+}
+
+.footer-btn {
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #445162;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #445162;
+	outline: none;
+}
+
+.footer-btn:hover {
+	background-color: #f5f5f5;
+}
+
+.footer-contacts {
+	width: 240px;
+}
+
+.footer-contacts-link {
+	display: block;
+	margin: 0;
+	margin-bottom: 19px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	position: relative;
+	padding: 0 0 0 30px;
+	box-sizing: border-box;
+}
+
+.footer-contacts-link:before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+    top: 0;
+}
+
+.footer-contacts-link:nth-of-type(1):before {
+	background-image: url('http://s1.iconbird.com/ico/0512/48pxwebiconset/w48h481337349991Skype.png');
+}
+
+.footer-contacts-link:nth-of-type(2):before {
+	background-image: url('http://s1.iconbird.com/ico/1012/human02/w128h1281349049365imicq.png');
+}
+
+.footer-contacts-link:nth-of-type(3):before {
+	background-image: url('http://s1.iconbird.com/ico/2013/11/504/w128h1281385326545email.png');
+}
+
+.footer-contacts-link:nth-of-type(4):before {
+	background-image: url('http://s1.iconbird.com/ico/2014/1/622/w128h1281390854463phone128.png');
+}
+
+.footer-contacts-icons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 32px;
+}
+
+.footer-contacts-icons-icon {
+	display: block;
+	width: 42px;
+	height: 42px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer-contacts-icons-icon:nth-of-type(1) {
+	background-image: url('http://s1.iconbird.com/ico/0912/SomacroIconSet/w500h5001347632760twitter.png');
+}
+
+.footer-contacts-icons-icon:nth-of-type(2) {
+	background-image: url('http://s1.iconbird.com/ico/0912/SomacroIconSet/w500h5001347632752facebook500.png');
+}
+
+.footer-contacts-icons-icon:nth-of-type(3) {
+	background-image: url('http://s1.iconbird.com/ico/0912/SomacroIconSet/w500h5001347632752linkedin.png');
+}
+
+.footer-contacts-icons-icon:nth-of-type(4) {
+	background-image: url('http://s1.iconbird.com/ico/0912/SomacroIconSet/w500h5001347632752googleplusrevised.png');
+}
+
+.footer-contacts-icons-icon:nth-of-type(5) {
+	background-image: url('http://s1.iconbird.com/ico/0912/SomacroIconSet/w500h5001347632760youtube.png');
 }
